@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="200dp">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="eg. London"
+                    android:inputType="text">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnGetWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:backgroundTint="#3E8BC8"
+                android:text="Get Weather"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:padding="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCity"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTemp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvLonLat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical"
+                tools:text="asf"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
